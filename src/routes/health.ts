@@ -1,5 +1,5 @@
-import { Health } from "@gateway/controllers/health";
-import express, { Router } from "express";
+import { Health } from '@gateway/controllers/health';
+import express, { Router } from 'express';
 
 class HealthRoutes {
   private router: Router;
@@ -9,7 +9,7 @@ class HealthRoutes {
   }
 
   public routes(): Router {
-    this.router.get("/gateway-health", Health.prototype.health);
+    this.router.get('/gateway-health', Health.prototype.health);
     return this.router;
   }
 }
